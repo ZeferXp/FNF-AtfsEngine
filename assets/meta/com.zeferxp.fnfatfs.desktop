@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=FNF Atfs Engine
+Comment=A Funkin' Engine Made By One Person
+Icon=com.zeferxp.fnfatfs
+Exec=AtfsEngine
+Categories=Game

@@ -38,6 +38,16 @@ class CreditsState extends MusicBeatState
 		#end
 
 		var defaultList:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
+			["FNFATFS Engine Team"],
+			["Zefer Xp",		"Zefer",		"Tweaked the engine",												"https://www.youtube.com/@Xpgamingio/",	"ff00c3"],
+			["Engine Contributors"],
+			["Jacob",				"Jacob",			"Helped decide the achievements builtins",					"https://www.youtube.com/@jacob16-q9t",	"ff0000"],
+			["Twitness",			"TwitnessAPK",		"Playtested FNFATFS and bugsearched the engine.",			"https://cdn.discordapp.com/attachments/1373216144713842738/1500298560569212980/Untitled69_20260503104933.png?ex=69f93eeb&is=69f7ed6b&hm=25b1de3349b1d63d279f77be2a28b8dd989982dd70a59ba4bcdb51b1cd7732e4&",	"68217a"],
+			[""],
+			["ATFS Engine Discord"],
+			["Join the XFNFM Discord!", "discord", "", "https://discord.gg/6QnvpxPtxk", "5165F6"],
+			[""],
+			["Psych Engine Credits"],
 			["Psych Engine Team"],
 			["Shadow Mario",		"shadowmario",		"Main Programmer and Head of Psych Engine",					"https://ko-fi.com/shadowmario",	"444444"],
 			["Riveren",				"riveren",			"Main Artist/Animator of Psych Engine",						"https://x.com/riverennn",			"14967B"],
@@ -53,7 +63,7 @@ class CreditsState extends MusicBeatState
 			["SqirraRNG",			"sqirra",			"Crash Handler and Base code for\nChart Editor's Waveform",	"https://x.com/gedehari",			"E1843A"],
 			["EliteMasterEric",		"mastereric",		"Runtime Shaders support and Other PRs",					"https://x.com/EliteMasterEric",	"FFBD40"],
 			["MAJigsaw77",			"majigsaw",			".MP4 Video Loader Library (hxvlc)",						"https://x.com/MAJigsaw77",			"5F5F5F"],
-			["iFlicky",				"flicky",			"Composer of Psync and Tea Time\nAnd some sound effects",	"https://x.com/flicky_i",			"9E29CF"],
+			["iFlicky",				"flicky",			"Composer of Psync and Tea Time and some sound effects",	"https://x.com/flicky_i",			"9E29CF"],
 			["KadeDev",				"kade",				"Fixed some issues on Chart Editor and Other PRs",			"https://x.com/kade0912",			"64A250"],
 			["superpowers04",		"superpowers04",	"LUA JIT Fork",												"https://x.com/superpowers04",		"B957ED"],
 			["CheemsAndFriends",	"cheems",			"Creator of FlxAnimate",									"https://x.com/CheemsnFriendos",	"E1E1E1"],

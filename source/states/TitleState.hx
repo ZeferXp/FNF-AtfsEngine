@@ -17,6 +17,7 @@ import shaders.ColorSwap;
 
 import states.StoryMenuState;
 import states.MainMenuState;
+import states.editors.MasterEditorMenu;
 
 typedef TitleData =
 {
@@ -392,6 +393,26 @@ class TitleState extends MusicBeatState
 				});
 				// FlxG.sound.play(Paths.music('titleShoot'), 0.7);
 			}
+				if (FlxG.keys.pressed.SHIFT && controls.justPressed('debug_1'))
+			{
+				titleText.color = FlxColor.WHITE;
+				titleText.alpha = 1;
+				
+				if(titleText != null) titleText.animation.play('press');
+
+				FlxG.camera.flash(ClientPrefs.data.flashing ? FlxColor.WHITE : 0x4CFFFFFF, 1);
+				FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
+
+				transitioning = true;
+				// FlxG.sound.music.stop();
+
+				new FlxTimer().start(1, function(tmr:FlxTimer)
+				{
+					MusicBeatState.switchState(new MasterEditorMenu());
+					closedState = true;
+				});
+				// FlxG.sound.play(Paths.music('titleShoot'), 0.7);
+			}
 			#if TITLE_SCREEN_EASTER_EGG
 			else if (FlxG.keys.firstJustPressed() != FlxKey.NONE)
 			{
@@ -449,6 +470,14 @@ class TitleState extends MusicBeatState
 		if (initialized && pressedEnter && !skippedIntro)
 		{
 			skipIntro();
+		}
+		if (initialized && FlxG.keys.pressed.SHIFT && controls.justPressed('debug_1') && !skippedIntro)
+		{
+				new FlxTimer().start(1, function(tmr:FlxTimer)
+				{
+					MusicBeatState.switchState(new MasterEditorMenu());
+					closedState = true;
+				});
 		}
 
 		if(swagShader != null)
@@ -527,16 +556,16 @@ class TitleState extends MusicBeatState
 					FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
 					FlxG.sound.music.fadeIn(4, 0, 0.7);
 				case 2:
-					createCoolText(['Psych Engine by'], 40);
+					createCoolText(['FNFATFS Engine by'], 40);
 				case 4:
-					addMoreText('Shadow Mario', 40);
-					addMoreText('Riveren', 40);
+					addMoreText('Zefer Xp', 40);
+					addMoreText('Psych Engine Team', 40);
 				case 5:
 					deleteCoolText();
 				case 6:
 					createCoolText(['Not associated', 'with'], -40);
 				case 8:
-					addMoreText('newgrounds', -40);
+					addMoreText('PsychEngine', -40);
 					ngSpr.visible = true;
 				case 9:
 					deleteCoolText();
@@ -548,11 +577,11 @@ class TitleState extends MusicBeatState
 				case 13:
 					deleteCoolText();
 				case 14:
-					addMoreText('Friday');
+					addMoreText('FNFATFS Engine');
 				case 15:
-					addMoreText('Night');
+					addMoreText('Is A Fork Of');
 				case 16:
-					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
+					addMoreText('Psych Engine'); // credTextShit.text += '\nFunkin';
 
 				case 17:
 					skipIntro();

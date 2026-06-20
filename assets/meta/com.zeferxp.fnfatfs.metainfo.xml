@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>io.github.shadowmario.fnf-psychengine</id>
-  <launchable type="desktop-id">io.github.shadowmario.fnf-psychengine.desktop</launchable>
+  <id>com.zeferxp.fnfatfs</id>
+  <launchable type="desktop-id">com.zeferxp.fnfatfs.desktop</launchable>
   <name>PsychEngine</name>
   <developer id="github.com/shadowmario">
     <name>ShadowMario</name>
-    <contact>https://github.com/ShadowMario/</contact>
+    <contact>https://github.com/ZeferXp/</contact>
   </developer>
   <summary>Desktop implementation of Friday Night Funkin'</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>Apache-2.0</project_license>
-  <url type="homepage">https://github.com/ShadowMario/FNF-PsychEngine</url>
+  <url type="homepage">https://github.com/ZeferXp/FNF-AtfsEngine/</url>
   <description>
-      <p>Engine originally used on the Mind Games Mod for Friday Night Funkin', intended to be a fix for the vanilla version's
-          many issues while keeping the casual play aspect of it. Also aiming to be an easier alternative to newbie developers
-          wanting to make their own variants.</p>
+      <p>Engine originally used on the FNFATFS ModPack for Friday Night Funkin': Psych Engine, intended to be a slight mod of Psych 
+          Engine and to use more customisability. Also aiming to be a cooler alternative to newbie modders wanting to make their own ATFS pack.</p>
   </description>
   <screenshots>
     <screenshot type="default">
@@ -54,7 +53,7 @@
     <category>Game</category>
   </categories>
   <releases>
-    <release version="0.7.3" date="2024-01-15"><url>https://github.com/ShadowMario/FNF-PsychEngine/releases/tag/0.7.3</url></release>
+    <release version="0.1.1" date="2026-08-12"><url>https://github.com/ShadowMario/FNF-PsychEngine/releases/tag/0.7.3</url></release>
   </releases>
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">intense</content_attribute>

@@ -9,6 +9,8 @@ import objects.MusicPlayer;
 
 import options.GameplayChangersSubstate;
 import substates.ResetScoreSubState;
+// import options.PlayerChangerSubState_rfeeiu;
+// import substates.PlayerSubState;
 
 import flixel.math.FlxMath;
 import flixel.util.FlxDestroyUtil;
@@ -322,7 +324,10 @@ class FreeplayState extends MusicBeatState
 				MusicBeatState.switchState(new MainMenuState());
 			}
 		}
-
+		// if(FlxG.keys.justPressed.TAB && !player.playingMusic)
+		// {
+		// 	openSubState(new PlayerChangerSubState_rfeeiu());
+		// }
 		if(FlxG.keys.justPressed.CONTROL && !player.playingMusic)
 		{
 			persistentUpdate = false;
@@ -355,6 +360,7 @@ class FreeplayState extends MusicBeatState
 							vocals.volume = 0.8;
 							vocals.play();
 							vocals.pause();
+							//ResetScoreSubState
 						}
 						else vocals = FlxDestroyUtil.destroy(vocals);
 					}
@@ -453,6 +459,12 @@ class FreeplayState extends MusicBeatState
 			#end
 		}
 		else if(controls.RESET && !player.playingMusic)
+		{
+			persistentUpdate = false;
+			openSubState(new ResetScoreSubState(songs[curSelected].songName, curDifficulty, songs[curSelected].songCharacter));
+			FlxG.sound.play(Paths.sound('scrollMenu'));
+		}
+		else if(controls.PLRSEL && !player.playingMusic)
 		{
 			persistentUpdate = false;
 			openSubState(new ResetScoreSubState(songs[curSelected].songName, curDifficulty, songs[curSelected].songCharacter));

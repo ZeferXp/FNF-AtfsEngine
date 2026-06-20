@@ -99,6 +99,7 @@ class ClientPrefs {
 		'accept'		=> [SPACE, ENTER],
 		'back'			=> [BACKSPACE, ESCAPE],
 		'pause'			=> [ENTER, ESCAPE],
+		'plrsel'		=> [TAB],
 		'reset'			=> [R],
 		
 		'volume_mute'	=> [ZERO],
@@ -122,6 +123,7 @@ class ClientPrefs {
 		'accept'		=> [A, START],
 		'back'			=> [B],
 		'pause'			=> [START],
+		'plrsel'		=> [X],
 		'reset'			=> [BACK]
 	];
 	public static var defaultKeys:Map<String, Array<FlxKey>> = null;

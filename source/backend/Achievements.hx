@@ -34,29 +34,32 @@ class Achievements {
 	{
 		createAchievement('friday_night_play',		{name: "Freaky on a Friday Night", description: "Play on a Friday... Night.", hidden: true});
 		#if BASE_GAME_FILES
-		createAchievement('week1_nomiss',			{name: "She Calls Me Daddy Too", description: "Beat Week 1 on Hard with no Misses."});
-		createAchievement('week2_nomiss',			{name: "No More Tricks", description: "Beat Week 2 on Hard with no Misses."});
-		createAchievement('week3_nomiss',			{name: "Call Me The Hitman", description: "Beat Week 3 on Hard with no Misses."});
-		createAchievement('week4_nomiss',			{name: "Lady Killer", description: "Beat Week 4 on Hard with no Misses."});
-		createAchievement('week5_nomiss',			{name: "Missless Christmas", description: "Beat Week 5 on Hard with no Misses."});
-		createAchievement('week6_nomiss',			{name: "Highscore!!", description: "Beat Week 6 on Hard with no Misses."});
-		createAchievement('week7_nomiss',			{name: "God Effing Damn It!", description: "Beat Week 7 on Hard with no Misses."});
-		createAchievement('weekend1_nomiss',		{name: "Just a Friendly Sparring", description: "Beat Weekend 1 on Hard with no Misses."});
+		createAchievement('week1_nomiss',			{name: "Very Sicko!", description: "Beat The FIRSTSONGS Week on Normal with no Misses."});
+		createAchievement('week2_nomiss',			{name: "Such a LEGEND EDITION!", description: "Beat The Kopil Week on Normal with no Misses."});
+		createAchievement('week3_nomiss',			{name: "So Genuine!", description: "Beat The Third Week on Normal with no Misses."});
+		createAchievement('week4_nomiss',			{name: "Project Overload!", description: "Beat The JamieProJects V2 Expansion on Normal with no Misses."});
+		createAchievement('week5_nomiss',			{name: "Oh No?", description: "Beat Smelly0no's Week on Normal with no Misses."});
+		createAchievement('week6_nomiss',			{name: "DeRonRon My Ass!", description: "Beat Mission My: Week on Normal with no Misses."});
+		createAchievement('week7_nomiss',			{name: "Boyf! Look At Me!", description: "Beat The Timmard Week on Normal with no Misses."});
+		createAchievement('week8_nomiss',			{name: "Ever On And On?", description: "Beat The TPM Again Week on Normal with no Misses."});
+		createAchievement('week9_nomiss',			{name: "Rant Rapper", description: "Beat WeekWeekWeek with no Misses."});
+		createAchievement('weekjaex_nomiss',		{name: "Jacob! What An Adventure!", description: "Beat The Jacob Adventure Expansion on Normal with no Misses."});
 		#end
 		createAchievement('ur_bad',					{name: "What a Funkin' Disaster!", description: "Complete a Song with a rating lower than 20%."});
-		createAchievement('ur_good',				{name: "Perfectionist", description: "Complete a Song with a rating of 100%."});
-		#if BASE_GAME_FILES
-		createAchievement('roadkill_enthusiast',	{name: "Roadkill Enthusiast", description: "Watch the Henchmen die 50 times.", maxScore: 50, maxDecimals: 0});
-		#end
+		createAchievement('ur_good',				{name: "Perfectionist", description: "SFC a Song with a rating of 100%."});
+		// #if BASE_GAME_FILES
+		// createAchievement('roadkill_enthusiast',	{name: "Roadkill Enthusiast", description: "Watch the Henchmen die 50 times.", maxScore: 50, maxDecimals: 0});
+		// #end
 		createAchievement('oversinging', 			{name: "Oversinging Much...?", description: "Sing for 10 seconds without going back to Idle."});
 		createAchievement('hype',					{name: "Hyperactive", description: "Finish a Song without going back to Idle."});
 		createAchievement('two_keys',				{name: "Just the Two of Us", description: "Finish a Song pressing only two keys."});
 		createAchievement('toastie',				{name: "Toaster Gamer", description: "Have you tried to run the game on a toaster?"});
 		#if BASE_GAME_FILES
-		createAchievement('debugger',				{name: "Debugger", description: "Beat the \"Test\" Stage from the Chart Editor.", hidden: true});
+		createAchievement('debugger',				{name: "Debugger", description: "Beat the Test Stage from the Chart Editor.", hidden: true});
 		#end
+		createAchievement('spamguy',				{name: "Yo What-", description: "Beat the not so secret Spam Track Stage.", hidden: true});
 		#if (TITLE_SCREEN_EASTER_EGG || PSYCH_WATERMARKS)
-		createAchievement('pessy_easter_egg',		{name: "Engine Gal Pal", description: "Teehee, you found me~!", hidden: true});
+		createAchievement('pessy_easter_egg',		{name: "Entering The Psych Ward?", description: "Find Pessy.", hidden: true});
 		#end
 
 		//dont delete this thing below
