@@ -1078,7 +1078,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 		// bg data //
 		/////////////
 		#if !BASE_GAME_FILES
-		camEditor.bgColor = 0xFF666666;
+		camEditor.bgColor = 0x00000000;
 		#else
 		var bg:BGSprite = new BGSprite('stageback', -600, -200, 0.9, 0.9);
 		add(bg);

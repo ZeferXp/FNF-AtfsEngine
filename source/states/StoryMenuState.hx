@@ -23,9 +23,11 @@ class StoryMenuState extends MusicBeatState
 
 	private static var lastDifficultyName:String = '';
 	var curDifficulty:Int = 1;
-
+	
 	var txtWeekTitle:FlxText;
 	var bgSprite:FlxSprite;
+
+	// private var camEditor:FlxCamera;
 
 	private static var curWeek:Int = 0;
 
@@ -51,7 +53,7 @@ class StoryMenuState extends MusicBeatState
 		persistentUpdate = persistentDraw = true;
 		PlayState.isStoryMode = true;
 		WeekData.reloadWeekFiles(true);
-
+		// camEditor.bgColor = 0xFF000000;
 		#if DISCORD_ALLOWED
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("In The Story Menu", null);
